@@ -1,8 +1,8 @@
-const sequelize = require('../db/sequelize_integrador')
+const sequelize = require('../db/sequelize')
 var Sequelize = require('sequelize');
 
 
-var Visita = sequelize.define('visita',{
+var Visita = sequelize.distribuidora('integrador').define('visita',{
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true

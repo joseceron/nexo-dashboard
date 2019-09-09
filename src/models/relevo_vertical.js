@@ -1,7 +1,9 @@
 const sequelize = require('../db/sequelize.js')
 var Sequelize = require('sequelize');
 
-var Relevo = sequelize.distribuidora('lavisa').define('r', {
+
+
+var Relevo = sequelize.distribuidora('vertical').define('r', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true
@@ -18,5 +20,6 @@ var Relevo = sequelize.distribuidora('lavisa').define('r', {
 
 module.exports =
     Relevo
+    
 
 

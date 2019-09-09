@@ -1,22 +1,17 @@
 const sequelize = require('../db/sequelize.js')
 var Sequelize = require('sequelize');
 
-var Relevo = sequelize.distribuidora('lavisa').define('r', {
+var Visita = sequelize.distribuidora('sercorisac').define('visita',{
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true
     },
-    fechaHora: {
+    fechaInicio: {
         type: Sequelize.DATE
-    },
+    },   
 
-}, {
-    tableName: 'relevo',
-
+},{
+  tableName: 'visita'  
 })
 
-
-module.exports =
-    Relevo
-
-
+module.exports = Visita

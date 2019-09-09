@@ -1,8 +1,8 @@
-const sequelize_integrador = require('../db/sequelize_integrador')
+const sequelize = require('../db/sequelize.js')
 var Sequelize = require('sequelize');
 
 
-var Relevo = sequelize_integrador.define('r',{
+var Relevo = sequelize.distribuidora('integrador').define('r',{
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true
